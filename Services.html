@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Java Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(0, 0, 39);
+            color: #f7f5f5;
+        }
+
+        .nav {
+            background-color: #13073e;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-left,
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #a78bfa;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fefcfc;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+
+        .service-card {
+            background-color: rgb(21, 21, 63);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .service-icon6 {
+            color: white;
+            font-size: 35px;
+        }
+
+        .service-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #8639d3;
+        }
+
+        .service-description {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #fefdfd;
+        }
+
+        .service-description li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <div class="nav-left">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        </div>
+         
+    </div>
+
+
+    <h1>🛠️ My Services</h1>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <div class="service-icon">💻</div>
+            <div class="service-title">Full Stack Web Development</div>
+            <ul class="service-description">
+                <li>➤ Core Java, Spring Boot, Hibernate for backend</li>
+                <li>➤ HTML, CSS, JavaScript, Bootstrap for frontend</li>
+                <li>➤ REST API integration with MySQL database</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🧩</div>
+            <div class="service-title">Java Backend Development</div>
+            <ul class="service-description">
+                <li>➤ Core Java, Servlets, JSP</li>
+                <li>➤ Spring Boot RESTful APIs</li>
+                <li>➤ Database connection using JDBC and Hibernate</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <div class="service-title">Frontend Development</div>
+            <ul class="service-description">
+                <li>➤ Responsive design using HTML, CSS</li>
+                <li>➤ JavaScript for interactivity</li>
+                <li>➤ Bootstrap for clean UI components</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🗄️</div>
+            <div class="service-title">Database Management</div>
+            <ul class="service-description">
+                <li>➤ MySQL design and optimization</li>
+                <li>➤ Complex query writing & joins</li>
+                <li>➤ Secure database integration with backend</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🚀</div>
+            <div class="service-title">Deployment & Hosting</div>
+            <ul class="service-description">
+                <li>➤ Deploy apps on Apache Tomcat or cloud</li>
+                <li>➤ Git & GitHub for version control</li>
+                <!-- <li>➤ Postman for API testing and documentation</li> -->
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon6">✔</div>
+            <div class="service-title">Bug Fixing & Optimization</div>
+            <ul class="service-description">
+                <li>➤ Debugging Java, JSP, and SQL errors</li>
+                <li>➤ Optimize application performance</li>
+                <li>➤ Follow clean code and best practices</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

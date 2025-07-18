@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Santosh Kumar Maurya - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(0, 0, 39);
+      color: #f7f5f5;
+    }
+
+    .nav {
+      background-color: #13073e;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-left, .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover {
+      color: #a78bfa;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background: rgb(21, 21, 63);
+      border-radius: 10px;
+    }
+
+    h1, h2.section-title {
+      color: #7921e4;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .cert-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .cert-card {
+      background-color: #1e1e4e;
+      border-radius: 10px;
+      padding: 15px;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .cert-card:hover {
+      transform: scale(1.03);
+    }
+
+    .cert-card h3 {
+      color: #a78bfa;
+      margin-bottom: 10px;
+    }
+
+    .cert-card img {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #333;
+    }
+
+    .cert-card a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #6c38d9;
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .cert-card a:hover {
+      background-color: #4d27a1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="nav">
+    <div class="nav-left">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    </div>
+    <div class="nav-right">
+      <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+      <a href="#certificates"><i class="fa-solid fa-award"></i> Certificates</a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="container" id="about">
+    <h1>About Me</h1>
+    <p>My name is <strong>Santosh Kumar Maurya</strong>, and I come from a small village in Basti district, Uttar Pradesh, India. I have always been passionate about technology and problem-solving, which led me to pursue a career in the IT field.</p>
+
+    <p>I completed my 10th and 12th from Basti-Uttar Pradesh, and earned my <strong>Bachelor's degree in Computer Applications (BCA)</strong> from Swami Vivekanand Subharti University, Meerut in 2023. Currently, I am pursuing my <strong>Master’s in Computer Applications (MCA)</strong> from Maharaja Agrasen Himalayan Garhwal University, Uttarakhand.</p>
+
+    <p>To enhance my practical skills, I completed a 6-month intensive <strong>Java Full Stack Development course from TAP Academy</strong>, Bengaluru. During this program, I gained hands-on experience in Java, HTML, CSS, JavaScript, Bootstrap, MySQL, JDBC, Servlets, JSP, Hibernate, and Spring Boot.</p>
+
+    <p>I am now actively seeking job opportunities in the IT sector where I can contribute my skills, grow as a developer, and be part of meaningful software projects.</p>
+  </div>
+
+  <!-- Certificates Section -->
+  <div class="container" id="certificates">
+    <h2 class="section-title">My Certificates</h2>
+    <p>Here are some certificates I earned during my learning journey:</p>
+
+    <div class="cert-container">
+      <!-- Certificate 1 -->
+      <div class="cert-card">
+        <h3>Java Full Stack Certificate</h3>
+        <img src="Java Certificate.jpg" alt="Java Full Stack Certificate" />
+        <a href="Certificate .pdf" download>Download</a>
+      </div>
+
+      <!-- Certificate 2 -->
+
+      <!-- <div class="cert-card">
+        <h3>Web Development Certificate</h3>
+        <img src="certificates/web_dev.jpg" alt="Web Development Certificate" />
+        <a href="certificates/web_dev.jpg" download>Download</a>
+      </div> -->
+
+      <!-- Add more certificates as needed -->
+    </div>
+  </div>
+
+</body>
+</html>

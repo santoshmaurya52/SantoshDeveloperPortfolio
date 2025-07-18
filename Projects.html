@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Projects | Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+         
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(0, 0, 39);
+            color: #f7f5f5;
+        }
+
+        .nav {
+            background-color: #13073e;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-left,
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #a78bfa;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.3rem;
+            color: #fdfcfe;
+        }
+
+        .project-card {
+            background-color: #20054c;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .project-title {
+            font-size: 1.6rem;
+            color: #faf8f8;
+            margin-bottom: 10px;
+        }
+
+        .section-label {
+            font-weight: 650;
+            font-size: large;
+            color: #9538d3;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .project-description,
+        .project-features,
+        .project-tools {
+            font-size: 1rem;
+            color: #ffffff;
+        }
+
+        .project-features li {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+
+        .project-tools span {
+            display: inline-block;
+            background-color: #e3f2fd;
+            color: #0366d6;
+            padding: 6px 12px;
+            margin: 5px 6px 0 0;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .project-links {
+            margin-top: 15px;
+        }
+
+        .project-links a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: 500;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+  <div class="nav">
+    <div class="nav-left">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    </div>
+    <div class="nav-right">
+      <a href="#project1">🚀 Project 1</a>
+      <a href="#project2">🚀 Project 2</a>
+    </div>
+  </div>
+
+
+    <h1>My Projects</h1>
+
+    <!-- Project 1 -->
+    <div class="project-card" id="project1">
+        <img src="host.jpg" alt="Hospital Management System" class="project-image">
+        <h3 class="project-title">💻🚀 Hospital Management System</h3>
+
+        <div class="section-label">➤ Description:</div>
+        <p class="project-description">
+            The Hospital Management System is a web-based application designed to manage the day-to-day operations of a
+            hospital efficiently. This project provides an integrated platform for managing patients, doctors,
+            appointments, billing, and medical records. It reduces the need for manual paperwork and increases the
+            accuracy, speed, and accessibility of hospital data.
+
+        <p class="project-description"> The system is developed using Java Servlets, JSP (JavaServer Pages) for the
+            backend, and JDBC for database
+            connectivity with MySQL. The frontend is created using HTML, CSS, and Bootstrap for a responsive and
+            user-friendly interface. JSTL is used to simplify JSP logic and manage data presentation effectively.</p>
+        </p>
+
+        <div class="section-label">🔑 Key Features:</div>
+        <ul class="project-features">
+            ✅ Admin dashboard to manage doctors, users, and appointments. <br>
+            ✅ User registration, login/logout. <br>
+            ✅ Appointment booking with doctor availability. <br>
+            ✅ Doctor login/logout and appointment management. <br>
+            ✅ Responsive and user-friendly UI. <br>
+            ✅ Session management and authentication. <br>
+            ✅ Doctor management (Add Doctor, Add Specialist, Update, View doctors) <br>
+            ✅ Update Password.
+
+        </ul>
+
+        <div class="section-label">🛠️ Tools Used:</div>
+        <div class="project-tools">
+            <span>Java</span>
+            <span>Servlets</span>
+            <span>JSP</span>
+            <span>MySQL</span>
+            <span>HTML/CSS</span>
+            <span>Bootstrap</span>
+            <span>JSTL</span>
+            <span>Server: Apache Tomcat</span>
+
+        </div>
+
+        <div class="project-links">
+            <!-- <a href="https://lnkd.in/dtCQwCV2">GitHub</a> -->
+            <i class="fa-brands fa-square-github fa-2xl" style="color: #984cd6;"></i>
+            <strong></strong>&nbsp; <a href="https://lnkd.in/dtCQwCV2" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card" id="project2">
+        <img src="Ebook.jpg" alt="Portfolio Website" class="project-image">
+        <h3 class="project-title">💻🚀 Ebook Management Store System</h3>
+
+        <div class="section-label">➤ Description:</div>
+        <p class="project-description">
+            The Ebook Management Store System is a dynamic, web-based application developed to manage the buying,
+            selling, and distribution of digital books online. It serves both customers who want to purchase or download
+            ebooks, and users who wish to sell their old or used books.
+
+        <p class="project-description">The system is built using Java Servlets and JSP for server-side functionality,
+            JDBC for database
+            connectivity with MySQL, and HTML, CSS, and Bootstrap for a responsive and modern user interface. JSTL is
+            used for dynamic data rendering within JSP pages.</p>
+
+        <p class="project-description">This application supports role-based access, where:</p>
+        </p>
+
+        <div class="section-label">🔑 Key Features:</div>
+        <ul class="project-features">
+            ✅ User registration and login. <br>
+            ✅ Admin login and dashboard. <br>
+            ✅ Add, update, Edit, delete ebooks. <br>
+            ✅ Search and filter ebooks by category. <br>
+            ✅ View book details And Order history. <br>
+            ✅ Sell old/used books feature for users. <br>
+            ✅ Shopping cart and secure checkout system. <br>
+            ✅ Book categorization (Fiction, Non-fiction, Academic, etc.) <br>
+            ✅ Session management and role-based access. <br>
+            ✅ Responsive and user-friendly interface.
+        </ul>
+
+        <div class="section-label">🛠️ Tools Used:</div>
+        <div class="project-tools">
+            <span>Java</span>
+            <span>Servlets</span>
+            <span>JSP</span>
+            <span>MySQL</span>
+            <span>HTML/CSS</span>
+            <span>Bootstrap</span>
+            <span>JSTL</span>
+            <span>Server: Apache Tomcat</span>
+        </div>
+
+        <div class="project-links">
+            <!-- <a href="https://lnkd.in/d3uF3iig">GitHub</a> -->
+            <i class="fa-brands fa-square-github fa-2xl" style="color: #984cd6;"></i>
+            <strong></strong>&nbsp; <a href="https://lnkd.in/d3uF3iig" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
