@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Font Awesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(0, 0, 39);
+      color: #f7f5f5;
+    }
+
+    .nav {
+      background-color: #13073e;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-left,
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover {
+      color: #a78bfa;
+      text-decoration: none;
+    }
+
+    .contact-container {
+      max-width: 700px;
+      margin: 100px auto 50px;
+      background-color: rgb(21, 21, 63);
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(21, 21, 65);
+      margin-top: 35px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    .contact-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #e9e7ed;
+      margin-top: 20px;
+      word-break: break-word;
+    }
+
+    .contact-item i {
+      margin-right: 12px;
+      color: #8f2fcf;
+      font-size: 22px;
+      min-width: 25px;
+    }
+
+    a {
+      color: #9830dd;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:hover span {
+      text-decoration: underline;
+    }
+
+
+
+  @media (max-width: 600px) {
+  .contact-container {
+  margin: 20px;
+  padding: 20px;
+  }
+
+  .contact-item {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+
+  .contact-item strong {
+  margin-bottom: 5px;
+  }
+
+  .nav {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+  }
+
+  .nav-left {
+  flex-direction: column;
+  gap: 10px;
+  }
+  }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="nav">
+    <div class="nav-left">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    </div>
+  </div>
+
+  <h1><i class="fa-solid fa-headset" style="color: #239414;"></i> Contact Information</h1>
+
+  <div class="contact-container">
+
+    <div class="contact-item">
+      <i class="fa-solid fa-envelope" style="color: #4689e2;"></i>
+      <strong>Email:</strong>&nbsp;
+      <a href="mailto:officialsantosh52@gmail.com">officialsantosh52@gmail.com</a>
+    </div>
+
+    <div class="contact-item">
+      <i class="fa-solid fa-phone" style="color: #28a31f;"></i>
+      <strong>Phone:</strong>&nbsp;
+      +91-9648994208, +91-9648994252
+    </div>
+
+    <div class="contact-item">
+      <i class="fa-brands fa-square-instagram" style="color: #e65199;"></i>
+      <strong>Instagram:</strong>&nbsp;
+      <a href="https://www.instagram.com/officialsantoshkm/" target="_blank">
+        S@ntosh
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <p style="font-size: 17px; margin: 6px 0; display: flex; align-items: center;">
+        <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank"
+          style="color: white; text-decoration: none; display: flex; align-items: center;">
+          <img src="naukari.png" alt="Naukri.com"
+            style="width: 29px; height: 29px; margin-right: 16px; border-radius: 4px; margin-left: -6px;">
+          <strong>Naukri:</strong>&nbsp;
+          <span style="color: #9830dd;">View Profile</span>
+        </a>
+      </p>
+
+    </div>
+
+
+
+    <div class="contact-item">
+      <i class="fa-brands fa-linkedin" style="color: #407ece;"></i>
+      <strong>LinkedIn:</strong>&nbsp;
+      <a href="https://www.linkedin.com/in/santosh-kumar-maurya-0a8176285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        target="_blank">Santosh Kumar Maurya</a>
+    </div>
+
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <strong>Permanent Address:</strong>&nbsp;
+      224, Haluwa, Basti, Uttar Pradesh, India - 272161
+    </div>
+
+    <div class="contact-item">
+      <i class="fa-solid fa-location-dot fa-beat-fade" style="color: #f0242e;"></i>
+      <strong>Current Address:</strong>&nbsp;
+      69, BTM layout, Bengaluru, Karnataka, India - 560076
+    </div>
+
+  </div>
+
+</body>
+
+</html>

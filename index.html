@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santosh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 39);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(21, 21, 63);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(122, 66, 175);
+            font-size: 1.0rem;
+            transition: color 0.2s;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(152, 152, 219);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 60px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .leftSection .btn {
+            padding: 4px;
+            background-color: rgb(37, 37, 67);
+            color: white;
+            border: 1px solid white;
+            border-radius: 6px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .sk {
+            color: rgb(122, 47, 192);
+        }
+
+        .text-grey {
+            font-size: small;
+            color: gray;
+        }
+
+        #element {
+            color: rgb(122, 66, 175);
+        }
+
+        .secondSection,
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            height: auto;
+            font-size: 1rem;
+        }
+
+        .secondSection h1 img,
+        .thirdSection h1 img {
+            width: 30px;
+            position: relative;
+            left: 10px;
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 55px 0;
+        }
+
+        .vertical-box {
+            background-color: #1e1e3f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            width: 30%;
+        }
+
+        .vertical {
+            height: auto;
+            width: 100%;
+        }
+
+        .image-top,
+        .image-top1 {
+            width: 50px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .vertical-title {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .vertical-desc {
+            font-size: 0.6rem;
+            text-align: justify;
+            color: gray;
+        }
+
+        footer {
+            background-color: rgb(21, 21, 63);
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .footer>div {
+            width: 223px;
+            margin: 10px 0;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        .leftSection .buttons {
+            padding: 30px 0;
+            display: flex;
+            gap: 10px;
+            /* less spacing between buttons */
+        }
+
+        .leftSection .btn {
+            text-decoration: none;
+            padding: 4px 10px;
+            /* smaller padding */
+            background-color: rgb(37, 37, 67);
+            color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 14px;
+            /* smaller font */
+            cursor: pointer;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .leftSection .btn:hover {
+            background-color: rgb(55, 55, 100);
+            color: rgb(199, 179, 248);
+        }
+
+        .profile-pic {
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-top: 10px;
+            vertical-align: middle;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+        }
+
+        .contact {
+            text-align: justify;
+            color: darkgray;
+            font-size: small;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-third p {
+            margin-top: 8px;
+            position: relative;
+            color: darkgray;
+        }
+
+        ul li a:hover {
+            text-decoration: none;
+            color: blueviolet;
+            transition: color 0.2s;
+        }
+ /* Social media icons underline settings */
+        .footer-social a {
+            text-decoration: none;
+            vertical-align: middle;
+        }
+
+        .footer-social i {
+            line-height: 1;
+            vertical-align: middle;
+        }
+
+
+
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                padding: 10px 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .firstSection {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin: 30px 10px;
+            }
+
+            .firstSection>div {
+                width: 100%;
+            }
+
+            .rightSection img {
+                width: 100%;
+            }
+
+            .leftSection .buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .leftSection .btn {
+                width: 90%;
+                font-size: 1rem;
+            }
+
+            .vertical-box {
+                width: 90%;
+            }
+
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 10px;
+            }
+
+            .footer>div {
+                width: 100%;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .footer-rights {
+                font-size: 13px;
+                padding-top: 10px;
+            }
+
+            .contact {
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img class="profile-pic" src="SANTOSH.jpg" alt="Profile Photo" />
+                Santosh Kumar Maurya
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Me</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Contact.HTML">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="sk">Santosh</span>
+                <div>And I am a Passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a class="btn" href="Santosh Updated (1)1.pdf" download="Santosh_Maurya_Resume.pdf">Download
+                        Resume</a>
+                    <a class="btn" href="https://github.com/santoshmaurya52" target="_blank">Visit GitHub</a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="developer img2.png" alt="" />
+            </div>
+        </section>
+
+        <hr />
+
+        <section class="secondSection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Skills & Features <img src="deve.png" alt="" /></h1>
+            <div class="box">
+                <div class="vertical-box">
+                    <div class="vertical">
+                        <img class="image-top" src="Java.png" alt="">
+                        <div class="vertical-title">Core Java & Advance Java</div>
+                        <div class="vertical-desc">Core Java provides the foundation with concepts like OOP,
+                            collections, and exception handling.
+                            JDBC is used to connect Java applications with databases to perform SQL operations.
+                            Servlets handle client requests and control the flow of the application, while JSP is used
+                            to
+                            design dynamic web pages for the presentation layer.
+                            All of this runs on Apache Tomcat, a lightweight server that hosts and executes Java web
+                            applications.</div>
+                    </div>
+                </div>
+                <div class="vertical-box">
+                    <div class="vertical">
+                        <img class="image-top" src="HTML css.png" alt="">
+                        <div class="vertical-title">HTML & CSS</div>
+                        <div class="vertical-desc">HTML (HyperText Markup Language) is the standard language used to
+                            create the structure and
+                            content of web pages,
+                            such as headings, paragraphs, images, and links. CSS (Cascading Style Sheets) is used to
+                            style
+                            and format the layout
+                            of these web pages, including colors, fonts, spacing, and responsiveness. Together, HTML and
+                            CSS
+                            form the front-end foundation of any website.</div>
+                    </div>
+                </div>
+                <div class="vertical-box">
+                    <div class="vertical">
+                        <img class="image-top" src="mysql_PNG.png" alt="">
+                        <div class="vertical-title">MySQL Database</div>
+                        <div class="vertical-desc">MySQL is an open-source relational database management system used to
+                            store, manage, and
+                            retrieve data efficiently.
+                            It supports SQL (Structured Query Language)
+                            for querying and managing data, and is widely used in web applications for handling backend
+                            databases.</div>
+                    </div>
+                </div>
+                <div class="vertical-box">
+                    <div class="vertical">
+                        <img class="image-top" src="SpringBoot.png" alt="">
+                        <div class="vertical-title">Spring Boot</div>
+                        <div class="vertical-desc">Spring Boot is a Java-based framework used to build stand-alone,
+                            production-ready web
+                            applications quickly and
+                            with minimal configuration. It simplifies the development
+                            process by providing built-in tools, embedded servers (like Tomcat), and auto-configuration
+                            features.</div>
+                    </div>
+                </div>
+                <div class="vertical-box">
+                    <div class="vertical">
+                        <img class="image-top" src="hibernate-logo.png" alt="">
+                        <div class="vertical-title">Hibernate</div>
+                        <div class="vertical-desc">Hibernate is an open-source Java framework used for mapping Java
+                            objects to relational database
+                            tables
+                            (ORM – Object Relational Mapping). It simplifies database operations
+                            by allowing developers to interact with the database using Java objects instead of writing
+                            complex SQL queries.</div>
+                    </div>
+                </div>
+                <div class="vertical-box">
+                    <div class="vertical">
+                        <img class="image-top" src="Bootstrap_logo.svg.png" alt="">
+                        <div class="vertical-title">Bootstrap</div>
+                        <div class="vertical-desc">Bootstrap is a popular open-source CSS framework used to design
+                            responsive and mobile-first
+                            websites quickly.
+                            It provides ready-made components like buttons, forms, navigation bars, and grids, making
+                            web
+                            design faster and
+                            consistent across devices.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <section class="thirdSection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Learn & Used Technology <img src="deve.png" alt="" /></h1>
+            <div class="box">
+                <div class="vertical-box">
+                    <div class="vertical">
+                        <img class="image-top1" src="eclipse1.png" alt="">
+                        <div class="vertical-title">Eclipse IDE</div>
+                        <div class="vertical-desc">Eclipse is a powerful, open-source integrated development environment
+                            (IDE) primarily used for
+                            Java development,
+                            though it supports other languages like C/C++, Python, PHP, and more through plugins.
+                            Developed
+                            by the Eclipse Foundation, it provides a robust platform for
+                            building software applications with tools for code editing, debugging, compiling, and
+                            version
+                            control.</div>
+                    </div>
+                </div>
+                <div class="vertical-box">
+                    <div class="vertical">
+                        <img class="image-top1" src="VS Code.png" alt="">
+                        <div class="vertical-title">Visual Studio Code</div>
+                        <div class="vertical-desc">Visual Studio Code (VS Code) is a lightweight, open-source code
+                            editor developed by Microsoft.
+                            It is known for its speed, flexibility, and extensive support for various programming
+                            languages
+                            such as JavaScript,
+                            Python, Java, C++, HTML/CSS, and many more. VS Code is highly customizable and supports
+                            thousands of extensions that enhance functionality for web, cloud, AI, and software
+                            development.</div>
+                    </div>
+                </div>
+                <div class="vertical-box">
+                    <div class="vertical">
+                        <img class="image-top1" src="Intelli_J.png" alt="">
+                        <div class="vertical-title">IntelliJ IDEA</div>
+                        <div class="vertical-desc">IntelliJ IDEA is a powerful, full-featured Integrated Development
+                            Environment (IDE) developed by
+                            JetBrains,
+                            primarily designed for Java development but also supports other languages like Kotlin,
+                            Groovy,
+                            Scala, Python,
+                            JavaScript, and more. It is known for its smart code completion, deep static analysis, and
+                            advanced refactoring tools,
+                            making it a favorite among professional developers for building robust and scalable
+                            applications.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Santosh Developer Portfolio</h3>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <p><i class="fa-solid fa-arrow-up-from-bracket fa-xl"></i></p>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="About.html">About</a></li>
+                    <p><i class="fa-solid fa-arrow-up-from-bracket fa-xl"></i></p>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Contact</li>
+                    <p class="contact">+91-9648994208</p>
+                    <p class="contact">officialsantosh52@gmail.com</p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-social" style="text-align: center; margin-bottom: 10px;">
+            <a href="https://www.linkedin.com/in/santosh-kumar-maurya-0a8176285/" target="_blank" style="color: white; margin: 0 10px;">
+                <i class="fab fa-linkedin fa-xl"></i>
+            </a>
+            <a href="https://www.instagram.com/officialsantoshkm/" target="_blank" style="color: white; margin: 0 10px;">
+                <i class="fab fa-instagram fa-xl"></i>
+            </a>
+            <a href="https://x.com/SantoshMau87936?t=bzEcXf8yLuknMhVb-oZ1Tg&s=09" target="_blank" style="color: white; margin: 0 10px;">
+                <i class="fab fa-x-twitter fa-xl"></i>
+            </a>
+            <a href="https://t.me/officialsantoshkm" target="_blank" style="color: white; margin: 0 10px;">
+                <i class="fab fa-telegram fa-xl"></i>
+            </a>
+            <a href="https://wa.me/919648994208" target="_blank" style="color: white; margin: 0 10px;">
+                <i class="fab fa-whatsapp fa-xl"></i>
+            </a>
+        </div>
+
+
+        <div class="footer-rights">
+            Copyright&#169;www.santoshportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Full Stack Web Developer', 'Java Backend Developer', 'Frontend Developer', 'Database Management'],
+            typeSpeed: 40,
+        });
+    </script>
+</body>
+
+</html>
